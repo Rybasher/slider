@@ -1,0 +1,70 @@
+body {
+	overflow-x: hidden;
+}
+.header {
+	width: 100%;
+	height: 100vh;
+	background: red;
+	position: relative;
+}
+.header-top {
+	width: 100%;
+	height: $size;
+	background: $dark-color;
+}
+.header-aside {
+	height: calc(100% - #{$size});
+	// height: 100%;
+	width: $size;
+	background: $dark-color;
+	color: white;
+	position: relative;
+	z-index: 10;
+}
+.slider-image {
+	position: absolute;
+	top: $size;
+	left: $size;
+	width: calc(100% - #{$size});
+	height: calc(100% - #{$size});
+	// background: blue;
+	z-index: 1;
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.slider-text {
+	position: absolute;
+	top: $size;
+	left: $size;
+	width: calc(100% - #{$size});
+	height: calc(100% - #{$size});
+	// background: blue;
+	z-index: 2;
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		width: 100%;
+		height: 100%;
+	}
+}
+.header-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: $size;
+	background: $dark-color;
+	z-index: 10;
+}
